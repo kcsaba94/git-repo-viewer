@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>git-repo-viewer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
 </head>
 <body>
-    <div>
-        test2
+    <div class="container">
+        <div class="row">
+            <form class="row g-3">
+                <div class="col-12">
+                  <label for="" class="form-label">GitHub username</label>
+                  <input type="text" placeholder="username..." class="form-control" id="input-username" maxlength="35">
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" id="btn-fetch">Search</button>
+                  <span class="invalid-name">The username is invalid. Please select another one.</span>
+                </div>
+              </form>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-striped table-responsive">
+                <tr>
+                    <th>Repo</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td><ul class="repo-name"></ul></td>
+                    <td><ul class="repo-description"></ul></td>
+                    <td><ul class="repo-url"></ul></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
