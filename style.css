@@ -1,4 +1,44 @@
 .invalid-name {
     display: none;
     color: red;
+    padding-bottom: 10px;
+}
+
+.selected-name {
+    display: none;
+    color: green;
+    padding-bottom: 10px;
+}
+
+.repo-checker-form {
+    max-width: 400px !important;
+    padding-bottom: 20px;
+}
+
+.elements .extra-width ul li {
+    width: 250px;
+}
+
+.elements td ul li {
+    list-style-type: none;
+}
+
+.extra-width {
+    width: 250px;
+}
+
+.extra-half-width {
+    width: 180px;
+}
+
+.elements .extra-half-width ul li {
+    width: 180px;
+}
+
+.th-names {
+    text-align: center;
+}
+
+.elements {
+    font-size: 14px;
 }
